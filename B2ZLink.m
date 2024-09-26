@@ -2,6 +2,7 @@ function [rxBits, rxSyms, txSyms] = B2ZLink(txBits, SNR, isCHIdeal)
     OSR = 100;
 
     [txWaveform, txSyms, numPkt] = BLETX(txBits, OSR);
+    % [txWaveform, txSyms, numPkt] = BLETXFast(txBits, OSR);
 
     if isCHIdeal
         rxWaveform = txWaveform;

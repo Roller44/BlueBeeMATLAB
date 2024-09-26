@@ -1,3 +1,6 @@
+clear all;
+clc;
+
 numBits = 10^5;
 SNRList = -10:2:30;
 
